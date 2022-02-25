@@ -10,3 +10,6 @@ Virt-manager is the front end to use QEMU.
 - Make sure you have granted execute permissions for install.sh. Use `chmod u+x install.sh`
 - Read the text that is presented when you run the install.sh file and follow the instructions.
 - Thats it!
+
+* Also, this is nowhere near finished or polished. Please use your own discretion when you run my shady bash files.
+* I haven't tested most of hte packages because I saw a youtube video about it that seemed legit. (Mental Outlaw)
