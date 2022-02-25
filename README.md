@@ -6,6 +6,7 @@ Virt-manager is the front end to use QEMU.
 
 # How do I use this?
 
+- Only works for apt-based Linux distro's (debian, ubuntu, kali etc.)
 - Make sure you have granted execute permissions for install.sh. Use `chmod u+x install.sh`
 - Read the text that is presented when you run the install.sh file and follow the instructions.
 - Thats it!
