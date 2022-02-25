@@ -15,9 +15,6 @@ if [[ $b == y ]]; then
 
 	#sudo apt install openbsd-netcat -y
 	sudo apt install netcat-openbsd -y
-
-	# cant find libguestfs for debian 10, accoring to some websites it is "imported into rolling" so that could mean it is already installed?
-	sudo apt install libguestfs -y
 fi
 
 echo
@@ -27,6 +24,10 @@ read i
 if [[ $i == y ]];then
 # Install this for uefi
 	sudo apt install ovmf
+
+# cant find libguestfs for debian 10, accoring to some websites it is "imported into rolling" so that could mean it is already installed?
+	sudo apt install libguestfs -y
+
 # Install this for TPM module emulation (installation is a pain in the a**)
 #	sudo apt-get install swtpm-dev
 fi
