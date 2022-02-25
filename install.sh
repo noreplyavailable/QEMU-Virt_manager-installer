@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-echo "* Installing packages [qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils netcat-openbsd libguestfs]"
+echo "* Installing base packages [qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils netcat-openbsd libguestfs]"
 echo "Continue? [y/n]"
 read b
 
@@ -18,6 +18,17 @@ if [[ $b == y ]]; then
 
 	# cant find libguestfs for debian 10, accoring to some websites it is "imported into rolling" so that could mean it is already installed?
 	sudo apt install libguestfs -y
+fi
+
+echo
+echo "Install extra packages? (recommended)"
+echo "Continue? [y/n]"
+read i
+if [[ $i == y ]];then
+# Install this for uefi
+	sudo apt install ovmf
+# Install this for TPM module emulation (installation is a pain in the a**)
+#	sudo apt-get install swtpm-dev
 fi
 
 echo
@@ -55,9 +66,8 @@ if [[ $u == y ]]; then
 	systemctl restart libvirtd
 fi
 
-
-
 echo
+echo "* Rebooting is optional, my install worked without it."
 echo "Reboot now? [y/n]"
 read p
 if [[ $p == y ]]; then
