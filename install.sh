@@ -21,7 +21,7 @@ if [[ $b == y ]]; then
 fi
 
 echo
-echo "Install extra packages? (recommended)"
+echo "Install extra packages? (experimental)"
 echo "Continue? [y/n]"
 read i
 if [[ $i == y ]];then
