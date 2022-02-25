@@ -1,6 +1,6 @@
 # Why do I need this?
 
-In the past we have used Virtualbox or VMware for our virtualization needs. These 2 apps operate on the software level and therefore are a lot slower. QEMU operates from the kernel and is much faster that way, almost reaching bare metal speeds with your VM's. No more are the days of slow virtualization.
+In the past we have used Virtualbox or VMware for our virtualization needs. These 2 apps operate on the software level and therefore are a lot slower. QEMU operates from the kernel and is much faster that way (I think), almost reaching bare metal speeds with your VM's. No more are the days of slow virtualization.
 
 Virt-manager is the front end to use QEMU.
 
