@@ -12,4 +12,4 @@ Virt-manager is the front end to use QEMU.
 - Thats it!
 
 * Also, this is nowhere near finished or polished. Please use your own discretion when you run my shady bash files.
-* I haven't tested most of hte packages because I saw a youtube video about it that seemed legit. (Mental Outlaw)
+* I haven't tested most of the packages because I saw a youtube video about it that seemed legit. (Mental Outlaw)
